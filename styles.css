@@ -1,0 +1,124 @@
+*{
+  box-sizing: border-box;
+}
+/* "Mrs. Sigg's Snickerdoodles" */
+
+#title, h1 {
+  font-family: "Lucida Handwriting"; 
+  background-color: #a78254;
+  color: #ffe4be;
+  width: 100vw;
+  font-size: 36px;
+  text-align: center; 
+ }
+
+#title h1.tp6{
+  color: #644e32;
+}
+
+ul, ol {
+  display: none;
+}
+
+ul.showMe,
+ol.showMe {
+  display: block
+}
+
+/*In order= Ingredients, Equipment, and Directions */
+
+h2 {
+  margin-bottom: 0; 
+  font-family: "Lucida Handwriting"; 
+  background-color: #a78254;
+  color: #ffe4be;
+ }
+h3 {
+  margin-bottom: 0; 
+  font-family: "Lucida Handwriting"; 
+  background-color: #a78254;
+  color: #ffe4be;
+  
+ }
+h4 {
+  margin-bottom: 0; 
+  font-family: "Lucida Handwriting"; 
+  background-color: #a78254;
+  color: #ffe4be;
+ }
+
+/* These are all my listed items */ 
+
+ul, ol, li {
+  margin-top: 0;
+  font-family: "Lucida Handwriting"; 
+  color: #a78254;
+  font-size: 19px;
+  background-color: #ffe4be;
+}
+/*photo and recipe credits */
+
+.copyright {
+  font-family: Arial;
+  font-size: 11px;
+  font-style: italic;
+  float: left;
+  color: #a78254;
+  background-color: #ffe4be;
+} 
+
+/*
+Responsive Design 'mobile first'
+
+FIX THIS LATER: the recipe does not take up the full screen when in landscape, and then once it gets to tablet size it fills up the page.
+
+@media screen and (max-width: 600px) {
+  div{
+    width: calc(100vw/3);
+    } 
+  }
+*/
+
+div {
+  display: inline-block;
+  width: 100vw;
+  padding: 1vw;
+  background: inline;
+  background-color: #a78254;
+  
+}
+/*
+@media (orientation: landscape) {
+  div{
+    width: calc(100vw/3);
+    float: left;
+  }
+}*/
+/* Background image */
+
+body{
+  background-image: url("https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F1751192.jpg&w=596&h=596&c=sc&poi=face&q=85");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@media (orientation: landscape) {
+  div {
+    width: calc(95vw/3 - 1vw);
+    float: left;
+  }
+}
+@media (orientation: portrait) {
+  div {
+    width: 100vw;
+  }
+}
+@media only screen and (max-width: 575px) {
+  body {
+    background-color: #ffe4be;
+  }
+}
+img {
+  width: 100%;
+  height: 500px;
+}
