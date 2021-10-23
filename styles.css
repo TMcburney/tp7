@@ -6,14 +6,15 @@
 #title, h1 {
   font-family: "Lucida Handwriting"; 
   background-color: #a78254;
-  color: #ffe4be;
-  width: 100vw;
+  color: #644e32;
+  width: 92vw;
   font-size: 36px;
-  text-align: center; 
+  text-align: center;
+  padding: 0 0;
  }
 
 #title h1.tp6{
-  color: #644e32;
+  color: #ffe4be;
 }
 
 ul, ol {
@@ -27,8 +28,9 @@ ol.showMe {
 
 /*In order= Ingredients, Equipment, and Directions */
 
-h2 {
-  margin-bottom: 0; 
+h2 { 
+  margin-bottom: 0;
+  font-size: 20.5px;
   font-family: "Lucida Handwriting"; 
   background-color: #a78254;
   color: #ffe4be;
@@ -69,8 +71,6 @@ ul, ol, li {
 
 /*
 Responsive Design 'mobile first'
-
-FIX THIS LATER: the recipe does not take up the full screen when in landscape, and then once it gets to tablet size it fills up the page.
 
 @media screen and (max-width: 600px) {
   div{
